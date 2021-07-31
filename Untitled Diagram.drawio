@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2021-07-31T10:28:55.466Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" version="14.8.6" etag="uBwPcEimtzXtKRFy-HeM" type="github"><diagram id="BYjT2eE-odGATEHhjXMd">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-07-31T10:36:37.040Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="UtBsSZuNMxNQuUbwa4yG" version="14.8.6" type="github">
+  <diagram id="BYjT2eE-odGATEHhjXMd" name="Page-1">
+    <mxGraphModel dx="1298" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1tImv971CZiWF4TgYlr-3" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="280" y="180" width="410" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-1" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry y="-30" width="410" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-2" value="Kafka Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="70.29" y="180" width="281.14" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77.86" y="-10" width="266" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77.86000000000001" y="140" width="266" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77.86000000000001" y="85" width="266" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77.86000000000001" y="40" width="266" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
