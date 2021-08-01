@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-01T07:21:51.962Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="IqodqNM14qYmx-4Lo3BJ" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-01T11:26:30.703Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="3L47RgBe-7dgaWgcA14v" version="14.8.6" type="github">
   <diagram id="BYjT2eE-odGATEHhjXMd" name="Page-1">
-    <mxGraphModel dx="2125" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2125" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,11 +13,14 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-2" value="Kafka Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
           <mxGeometry x="70.29" y="180" width="281.14" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
-          <mxGeometry x="77" y="100" width="266" height="50" as="geometry" />
+        <mxCell id="c1tImv971CZiWF4TgYlr-8" value="Processed Data Topic" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77" y="50" width="266" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-7" value="Kafka Topic to dumb raw requests so that&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
-          <mxGeometry x="77.86" width="266" height="50" as="geometry" />
+        <mxCell id="c1tImv971CZiWF4TgYlr-102" value="Non Processed Data Topic&lt;br&gt;(Records which cannot be converted to target canonical data model)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77.86000000000001" y="110" width="266" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-7" value="Kafka Request Topic to dumb raw data so that socket connection thread is released fast to handle new requests.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77" y="-10" width="266" height="50" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-55" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.989;entryY=0.884;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="c1tImv971CZiWF4TgYlr-24">
           <mxGeometry relative="1" as="geometry">
@@ -63,8 +66,10 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.022;exitY=0.622;exitDx=0;exitDy=0;entryX=1;entryY=0.841;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-27" target="c1tImv971CZiWF4TgYlr-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-91" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.928;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-27" target="c1tImv971CZiWF4TgYlr-87">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="c1tImv971CZiWF4TgYlr-91" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="487" y="579" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-27" value="Scheduled&amp;nbsp;&lt;br&gt;REST/SOAP&lt;br&gt;Call to&lt;br&gt;Fetch Data&lt;br&gt;from External&lt;br&gt;Source&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="103" y="530" width="90" height="90" as="geometry" />
@@ -185,13 +190,14 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-85" value="FTP&lt;br&gt;request from&lt;br&gt;DC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="87" y="150" width="103" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-92" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.005;exitY=0.372;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-87" target="c1tImv971CZiWF4TgYlr-7">
+        <mxCell id="c1tImv971CZiWF4TgYlr-92" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.004;entryY=0.64;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="c1tImv971CZiWF4TgYlr-7">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="701" y="372" as="sourcePoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-87" value="&lt;b&gt;&lt;u&gt;Before submitting request from different sources, requests are wrapped in a object having below properties&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;u&gt;dataSourceId&lt;/u&gt; : Data Source Identifier&amp;nbsp;&lt;br&gt;&lt;u&gt;recordSetId&lt;/u&gt; // Number of records uploaded in single request/csv&amp;nbsp;&lt;br&gt;&lt;u&gt;recordId&lt;/u&gt; // Identify each record in record set&lt;br&gt;&lt;u&gt;requestDate&lt;/u&gt; //&amp;nbsp; The date of request&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;The dataSource can be identified&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;br&gt;For CSV upload : Provide Separate FTP path to each Client&lt;br&gt;For SOAP/Rest Request : Using Client Credentials&lt;br&gt;For Scheduled REST/SOAP Request: Upfront having info as request originated from own syste.&lt;br&gt;&lt;br&gt;Note : This is not any central component , each receiver is responsible&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="490" y="240" width="210" height="360" as="geometry" />
+        <mxCell id="c1tImv971CZiWF4TgYlr-87" value="&lt;b&gt;&lt;u&gt;Before submitting request from different sources, requests are wrapped in a object having below properties&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;u&gt;dataSourceId&lt;/u&gt; : Data Source Identifier&amp;nbsp;&lt;br&gt;&lt;u&gt;recordSetId&lt;/u&gt; // Number of records uploaded in single request/csv&amp;nbsp;&lt;br&gt;&lt;u&gt;recordId&lt;/u&gt; // Identify each record in record set&lt;br&gt;&lt;u&gt;requestDate&lt;/u&gt; //&amp;nbsp; The date of request&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;The dataSource can be identified&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;br&gt;For CSV upload : Provide Separate FTP path to each Client&lt;br&gt;For SOAP/Rest Request : Using Client Credentials&lt;br&gt;For Scheduled REST/SOAP Request: Upfront having info as request originated from own system.&lt;br&gt;&lt;br&gt;Note : This is not any central component , each receiver is responsible for parsing serialised data and wrapping the data with above mentioned properties.&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="490" y="240" width="210" height="390" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-89" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.158;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-58" target="c1tImv971CZiWF4TgYlr-87">
           <mxGeometry relative="1" as="geometry">
@@ -214,6 +220,12 @@
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-94" value="External Client&lt;br&gt;Data&lt;br&gt;Provider" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-481" y="390" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-103" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="315" width="330" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-104" value="Spring cloud stream &lt;br&gt;+ kafka stream to consume from Request Topic and convert raw data to target canonical model and put processed records and non-processed records on respective topics" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="320" width="200" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
