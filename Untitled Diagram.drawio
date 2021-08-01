@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-08-01T06:24:08.058Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="AmAz5udz0Ip2-dS2w4JE" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-01T07:21:51.962Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="IqodqNM14qYmx-4Lo3BJ" version="14.8.6" type="github">
   <diagram id="BYjT2eE-odGATEHhjXMd" name="Page-1">
     <mxGraphModel dx="2125" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="c1tImv971CZiWF4TgYlr-3" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="660" y="270" width="410" height="200" as="geometry" />
+          <mxGeometry x="750" y="350" width="410" height="200" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-1" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
           <mxGeometry y="-40" width="410" height="240" as="geometry" />
@@ -13,22 +13,22 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-2" value="Kafka Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
           <mxGeometry x="70.29" y="180" width="281.14" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
-          <mxGeometry x="77.86" y="-10" width="266" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
-          <mxGeometry x="77.86000000000001" y="140" width="266" height="30" as="geometry" />
+          <mxGeometry x="77" y="100" width="266" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
-          <mxGeometry x="77.86000000000001" y="85" width="266" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
-          <mxGeometry x="77.86000000000001" y="40" width="266" height="30" as="geometry" />
+        <mxCell id="c1tImv971CZiWF4TgYlr-7" value="Kafka Topic to dumb raw requests so that&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-3">
+          <mxGeometry x="77.86" width="266" height="50" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-55" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.989;entryY=0.884;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="c1tImv971CZiWF4TgYlr-24">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-53" y="559" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-97" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.011;exitY=0.182;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-22" target="c1tImv971CZiWF4TgYlr-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-100" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.011;entryY=0.175;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-22" target="c1tImv971CZiWF4TgYlr-32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-22" value="API&amp;nbsp;&lt;br&gt;Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-50" y="230" width="90" height="390" as="geometry" />
@@ -49,10 +49,21 @@
             <mxPoint x="-138" y="90" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-96" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.033;entryY=0.185;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.033;exitY=0.462;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-24" target="c1tImv971CZiWF4TgYlr-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-99" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.033;entryY=0.518;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.674;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-24" target="c1tImv971CZiWF4TgYlr-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-120" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-24" value="Firewall" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-230" y="20" width="90" height="610" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.022;exitY=0.622;exitDx=0;exitDy=0;entryX=1;entryY=0.841;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-27" target="c1tImv971CZiWF4TgYlr-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-91" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.928;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-27" target="c1tImv971CZiWF4TgYlr-87">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-27" value="Scheduled&amp;nbsp;&lt;br&gt;REST/SOAP&lt;br&gt;Call to&lt;br&gt;Fetch Data&lt;br&gt;from External&lt;br&gt;Source&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -100,13 +111,6 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-39" value="FTP&lt;br&gt;Server 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-40">
           <mxGeometry width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-47" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-46" target="c1tImv971CZiWF4TgYlr-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="550" y="283" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-51" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-46" target="c1tImv971CZiWF4TgYlr-39">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -123,6 +127,9 @@
               <mxPoint x="520" y="150" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-88" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.295;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-46" target="c1tImv971CZiWF4TgYlr-87">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-46" value="Filewatcher/Kafka&lt;br&gt;FTP Connector&lt;br&gt;read from file&lt;br&gt;location" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="70" width="120" height="60" as="geometry" />
@@ -164,7 +171,7 @@
           <mxGeometry x="35" y="55" width="120" height="25" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-73" value="&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp;Parser Design&lt;br&gt;dataSourceId : Data Source Identifier&amp;nbsp;&lt;br&gt;recordSetId // Number of records uploaded in single request/csv&amp;nbsp;&lt;br&gt;recordId // Identify each record in record set&lt;br&gt;requestDate //&amp;nbsp; The date of request&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="600" y="525" width="360" height="165" as="geometry" />
+          <mxGeometry x="780" y="30" width="360" height="165" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-74" value="Pre conversion&lt;br&gt;can be done" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="570" y="150" width="70" height="40" as="geometry" />
@@ -172,14 +179,41 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-83" value="Queue&lt;br&gt;save data in starting for&lt;br&gt;reconscilation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="87" y="680" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-84" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="370" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-86" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-85" target="c1tImv971CZiWF4TgYlr-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-85" value="FTP&lt;br&gt;request from&lt;br&gt;DC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="87" y="150" width="103" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-92" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.005;exitY=0.372;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-87" target="c1tImv971CZiWF4TgYlr-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-87" value="&lt;b&gt;&lt;u&gt;Before submitting request from different sources, requests are wrapped in a object having below properties&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;u&gt;dataSourceId&lt;/u&gt; : Data Source Identifier&amp;nbsp;&lt;br&gt;&lt;u&gt;recordSetId&lt;/u&gt; // Number of records uploaded in single request/csv&amp;nbsp;&lt;br&gt;&lt;u&gt;recordId&lt;/u&gt; // Identify each record in record set&lt;br&gt;&lt;u&gt;requestDate&lt;/u&gt; //&amp;nbsp; The date of request&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;The dataSource can be identified&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;br&gt;For CSV upload : Provide Separate FTP path to each Client&lt;br&gt;For SOAP/Rest Request : Using Client Credentials&lt;br&gt;For Scheduled REST/SOAP Request: Upfront having info as request originated from own syste.&lt;br&gt;&lt;br&gt;Note : This is not any central component , each receiver is responsible&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="490" y="240" width="210" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-89" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.158;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-58" target="c1tImv971CZiWF4TgYlr-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-90" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="488" y="446" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-95" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.011;entryY=0.461;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-93" target="c1tImv971CZiWF4TgYlr-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-93" value="External Client&lt;br&gt;Data&lt;br&gt;Provider" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-481" y="260" width="90" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-98" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.672;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-94" target="c1tImv971CZiWF4TgYlr-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-94" value="External Client&lt;br&gt;Data&lt;br&gt;Provider" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-481" y="390" width="90" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
