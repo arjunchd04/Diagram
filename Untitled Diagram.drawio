@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-08-01T12:05:51.116Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="TDmyXpTNYPEPfkxEzXj3" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-01T12:32:01.481Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="7A5vE202EM-OaaJ0n37x" version="14.8.6" type="github">
   <diagram id="BYjT2eE-odGATEHhjXMd" name="Page-1">
     <mxGraphModel dx="2125" dy="1838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="c1tImv971CZiWF4TgYlr-145" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="510" y="895" width="420" height="115" as="geometry" />
+        </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-3" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="750" y="350" width="410" height="200" as="geometry" />
         </mxCell>
@@ -292,8 +295,77 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-126" value="Loading Data into system from different sources" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=5;fontSize=24;" vertex="1" parent="1">
           <mxGeometry x="-570" y="-100" width="700" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-127" value="consuming Data From Topic and saving into Database" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=5;fontSize=24;" vertex="1" parent="1">
+        <mxCell id="c1tImv971CZiWF4TgYlr-127" value="Consuming Data From Topic and saving into Database" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=5;fontSize=24;" vertex="1" parent="1">
           <mxGeometry x="-530" y="810" width="700" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-129" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-480" y="920" width="410" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-130" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="c1tImv971CZiWF4TgYlr-129">
+          <mxGeometry y="-40" width="410" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-131" value="Kafka Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-129">
+          <mxGeometry x="70.29" y="180" width="281.14" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-132" value="Processed Data Topic" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-129">
+          <mxGeometry x="77" y="50" width="266" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-133" value="Non Processed Data Topic&lt;br&gt;(Records which cannot be converted to target canonical data model)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-129">
+          <mxGeometry x="77.86000000000001" y="110" width="266" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-134" value="Kafka Request Topic to dumb raw data so that socket connection thread is released fast to handle new requests.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-129">
+          <mxGeometry x="77" y="-10" width="266" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-150" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-135" target="c1tImv971CZiWF4TgYlr-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-157" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-135" target="c1tImv971CZiWF4TgYlr-151">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-135" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="940" width="370" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-136" value="&lt;b&gt;&lt;u&gt;Spring cloud stream &lt;br&gt;+ kafka stream&lt;/u&gt;&lt;/b&gt; to consume from Processed Data Topic and and load asynchronously into Relational and NoSQL Database&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="945" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-137" value="Docker Container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="945" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-138" value="Docker Container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="985" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-139" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=24;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-132" target="c1tImv971CZiWF4TgYlr-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-143" value="&lt;font style=&quot;font-size: 10px&quot;&gt;Relational Database&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fontSize=24;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="530" y="901.25" width="70" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-146" value="&lt;font style=&quot;font-size: 10px&quot;&gt;Relational Database&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fontSize=24;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="630" y="901.25" width="70" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-147" value="......" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="720" y="922.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-148" value="&lt;font style=&quot;font-size: 10px&quot;&gt;Relational Database&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fontSize=24;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="780" y="901.25" width="70" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-151" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1045" width="430" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-152" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1060" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-153" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1060" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-154" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1060" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-155" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; font-size: 12px ; line-height: normal ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;NoSQL Database cluster. &lt;b&gt;&lt;u&gt;Data is indexed on different attributes&lt;/u&gt;&lt;/b&gt; , so that data can be fetched faster to do reconciliation on different factors .&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1110" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-158" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; font-size: 12px ; line-height: normal ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;Database cluster , &lt;b&gt;&lt;u&gt;Sharding is enabled to logically divide data into different partitions to faster load the data&lt;/u&gt;&lt;/b&gt;.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="560" y="985" width="320" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
