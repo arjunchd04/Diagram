@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-01T06:16:04.710Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="BJAs9dfncgXgK_Ml2Eym" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-01T06:24:08.058Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="AmAz5udz0Ip2-dS2w4JE" version="14.8.6" type="github">
   <diagram id="BYjT2eE-odGATEHhjXMd" name="Page-1">
     <mxGraphModel dx="2125" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,7 +73,7 @@
             <mxPoint x="-229.01" y="90" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-33" value="External Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="c1tImv971CZiWF4TgYlr-33" value="External Client&lt;br&gt;outside DC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-491" y="60" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-34" target="c1tImv971CZiWF4TgYlr-39">
@@ -171,6 +171,15 @@
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-83" value="Queue&lt;br&gt;save data in starting for&lt;br&gt;reconscilation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="87" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-84" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-86" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-85" target="c1tImv971CZiWF4TgYlr-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-85" value="FTP&lt;br&gt;request from&lt;br&gt;DC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="87" y="150" width="103" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
