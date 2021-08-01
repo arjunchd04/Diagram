@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-01T11:26:30.703Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="3L47RgBe-7dgaWgcA14v" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-01T11:42:31.426Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="-480ZsN3V524kCadFceQ" version="14.8.6" type="github">
   <diagram id="BYjT2eE-odGATEHhjXMd" name="Page-1">
-    <mxGraphModel dx="2125" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2125" dy="1838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -175,12 +175,6 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-69" value="Docker Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="c1tImv971CZiWF4TgYlr-64">
           <mxGeometry x="35" y="55" width="120" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-73" value="&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp;Parser Design&lt;br&gt;dataSourceId : Data Source Identifier&amp;nbsp;&lt;br&gt;recordSetId // Number of records uploaded in single request/csv&amp;nbsp;&lt;br&gt;recordId // Identify each record in record set&lt;br&gt;requestDate //&amp;nbsp; The date of request&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="780" y="30" width="360" height="165" as="geometry" />
-        </mxCell>
-        <mxCell id="c1tImv971CZiWF4TgYlr-74" value="Pre conversion&lt;br&gt;can be done" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="150" width="70" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-83" value="Queue&lt;br&gt;save data in starting for&lt;br&gt;reconscilation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="87" y="680" width="120" height="60" as="geometry" />
         </mxCell>
@@ -221,11 +215,37 @@
         <mxCell id="c1tImv971CZiWF4TgYlr-94" value="External Client&lt;br&gt;Data&lt;br&gt;Provider" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-481" y="390" width="90" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-109" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-103" target="c1tImv971CZiWF4TgYlr-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-110" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-103" target="c1tImv971CZiWF4TgYlr-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1465" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-103" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1320" y="315" width="330" height="105" as="geometry" />
+          <mxGeometry x="1280" y="315" width="370" height="105" as="geometry" />
         </mxCell>
         <mxCell id="c1tImv971CZiWF4TgYlr-104" value="Spring cloud stream &lt;br&gt;+ kafka stream to consume from Request Topic and convert raw data to target canonical model and put processed records and non-processed records on respective topics" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1330" y="320" width="200" height="70" as="geometry" />
+          <mxGeometry x="1290" y="320" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-106" value="Docker Container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-107" value="Docker Container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-108" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c1tImv971CZiWF4TgYlr-7" target="c1tImv971CZiWF4TgYlr-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1tImv971CZiWF4TgYlr-112" value="&lt;span&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span&gt;Different Partners may have different data schema even using same data representation xml/json.&lt;/span&gt;&lt;br&gt;&lt;span&gt;Example&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;Partner 1&lt;span&gt;	&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;Partner 2&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;span&gt;user =&lt;/span&gt;&lt;span&gt;	&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;user =&lt;/span&gt;&lt;br&gt;&lt;span&gt;{&lt;/span&gt;&lt;span&gt;	&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;{&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;nbsp;&quot;name&quot; : &quot;ABC&quot;,&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp;&quot;userName&quot; : &quot;ABC&quot;,&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;nbsp; addLine1: &quot;aaa&quot;,&amp;nbsp;&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &quot;address&quot; :&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;nbsp; addLine2 : &quot;bbb&quot;,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;nbsp; &quot;city&quot; : &quot;xyz&quot;.&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span&gt;	&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;&quot;addLine1&quot; : &quot;aaa&quot;&lt;/span&gt;&lt;br&gt;&lt;span&gt;}&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;&amp;nbsp;.......&lt;/span&gt;&lt;br&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp;}}&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp;Partner1 use &quot;name&quot; but Partner2 schema is having &quot;userName&quot; and Partner1 use flat structure to represent address , but Partner2 is having one more hierarchy. So different parser class are required for different partners.&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="970" y="-10" width="405" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
